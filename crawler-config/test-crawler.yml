@@ -1,0 +1,4 @@
+domains:
+  - url: https://example.com
+
+output_sink: console

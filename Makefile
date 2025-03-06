@@ -7,7 +7,7 @@ $(VENV)/bin/activate: pyproject.toml
 run: $(VENV)/bin/activate
 	uv run $(PYTHON) server.py
 
-add-claude-config: $(VENV)/bin/activate
+install-claude-config:
 	uv run mcp install server.py --with elasticsearch
 
 lint:
@@ -16,5 +16,5 @@ lint:
 clean:
 	rm -rf $(VENV) __pycache__
 
-dev: check-nvm
+dev:
 	uv run mcp dev server.py

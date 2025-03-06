@@ -1,5 +1,5 @@
 [project]
-name = "example-elastic-mcp-server"
+name = "elastic-semantic-search-mcp-server"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"

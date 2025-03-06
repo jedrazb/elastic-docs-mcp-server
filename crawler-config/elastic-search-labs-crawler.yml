@@ -1,0 +1,32 @@
+domains:
+  - url: https://www.elastic.co
+    seed_urls:
+      - https://www.elastic.co/search-labs
+    crawl_rules:
+      - policy: allow
+        type: begins
+        pattern: /search-labs
+      - policy: deny
+        type: regex
+        pattern: .*
+
+output_sink: elasticsearch
+output_index: search-labs-posts
+
+max_crawl_depth: 10
+max_title_size: 500
+max_body_size: 5_242_880
+max_keywords_size: 512
+max_description_size: 512
+max_indexed_links_count: 10
+max_headings_count: 10
+
+elasticsearch:
+  # host:
+  # port:
+  # username: elastic
+  # password: changeme
+  # api_key:
+  bulk_api:
+    max_items: 10
+    max_size_bytes: 1_048_576
