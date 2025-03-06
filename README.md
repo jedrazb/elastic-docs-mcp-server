@@ -1,4 +1,4 @@
-# README: Search Labs Blog Search with MCP & Elasticsearch
+# MCP Server: Elasticsearch semantic search tool
 
 ## Table of Contents
 - [Overview](#overview)
